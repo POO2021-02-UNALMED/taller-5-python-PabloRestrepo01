@@ -24,10 +24,19 @@ class Anfibio(Animal):
         return 'saltar'
     
     @classmethod
-    def crearRama(cls, nombre, edad, genero):
+    def crearRana(cls, nombre, edad, genero):
         cls.ranas += 1
         return Anfibio(nombre, edad, 'selva', genero, 'rojo', True)
         
     def crearSalamandra(cls, nombre, edad, genero):
         cls.salamandras += 1
         return Anfibio(nombre, edad, 'selva', genero, 'rojo', True)
+
+    def setColorPiel(self, colorPiel):
+        self._colorPiel = colorPiel
+    
+    def getColorPiel(self):
+        return self._colorPiel
+    
+    def isVenenoso(self):
+        return self._venenoso
