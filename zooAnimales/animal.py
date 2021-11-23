@@ -21,10 +21,10 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
-        return 	"Mamiferos: " + str(Mamifero.cantidadMamiferos()) +'''\n
-		Aves: ''' +str(Ave.cantidadAves()) + '''\n
-		Reptiles: '''+str(Reptil.cantidadReptiles()) +'''\n
-		Peces: '''+str(Pez.cantidadPeces()) +'''\n
+        return 	"Mamiferos: " + str(Mamifero.cantidadMamiferos()) +'''
+		Aves: ''' +str(Ave.cantidadAves()) + '''
+		Reptiles: '''+str(Reptil.cantidadReptiles()) +'''
+		Peces: '''+str(Pez.cantidadPeces()) +'''
 		Anfibios: '''+str(Anfibio.cantidadAnfibios())
     
     def toString(self):   
