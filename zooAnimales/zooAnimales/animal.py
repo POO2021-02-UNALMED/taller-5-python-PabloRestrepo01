@@ -27,7 +27,7 @@ class Animal:
 		Peces: '''+Pez.cantidadPeces() +'''\n
 		Anfibios: '''+Anfibio.cantidadAnfibios()
     
-    def __str__(self):   
+    def toString(self):   
         retorno = 'Mi nombre es ' + self._nombre + ', tengo una edad de ' + self._edad + ', habito en ' +self._habitat + ' y mi genero es '+self._genero;
         
         if self._zona != None:
