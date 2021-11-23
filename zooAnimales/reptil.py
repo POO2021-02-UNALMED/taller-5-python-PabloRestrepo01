@@ -1,10 +1,10 @@
 from zooAnimales.animal import Animal
 class Reptil(Animal):
-    listado = []
+    _listado = []
     iguanas = 0
     serpientes = 0
     
-    def __init__(self, colorEscamas, largoCola, nombre, edad, habitat, genero):
+    def __init__(self, nombre, edad, habitat, genero, colorEscamas, largoCola):
         self._colorEscamas = colorEscamas
         self._largoCola = largoCola
         Animal._totalAnimales += 1

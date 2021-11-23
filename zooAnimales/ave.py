@@ -1,10 +1,10 @@
 from zooAnimales.animal import Animal
 class Ave(Animal):
-    listado = []
+    _listado = []
     halcones = 0
     aguilas = 0
     
-    def __init__(self, colorPlumas, nombre, edad, habitat, genero):
+    def __init__(self, nombre, edad, habitat, genero, colorPlumas):
         self._colorPlumas = colorPlumas
         Ave._listado.append(self)
         Animal._totalAnimales += 1

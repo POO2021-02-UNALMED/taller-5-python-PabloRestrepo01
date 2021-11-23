@@ -1,10 +1,10 @@
 from zooAnimales.animal import Animal
 class Pez(Animal):
-    listado = []
+    _listado = []
     salmones = 0
     bacalaos = 0
     
-    def __init__(self, colorEscamas, colorAletas, nombre, edad, habitat, genero):
+    def __init__(self, nombre, edad, habitat, genero, colorEscamas, colorAletas):
         self._colorEscamas = colorEscamas
         self._colorAletas = colorAletas
         Animal._totalAnimales += 1

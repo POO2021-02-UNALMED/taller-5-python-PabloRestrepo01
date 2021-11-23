@@ -33,4 +33,28 @@ class Animal:
         if self._zona != None:
             retorno += ', la zona en la que me ubico es ' + self._zona +', en el ' + self._zona.getZoo()
         
-        return retorno; 
+        return retorno
+    
+    def setNombre(self, nombre):
+            self._nombre = nombre
+        
+    def getNombre(self):
+        return self._nombre
+    
+    def setEdad(self, edad):
+            self._edad = edad
+        
+    def getNombre(self):
+        return self._edad
+    
+    def setNombre(self, habitat):
+        self._habitat = habitat
+        
+    def getNombre(self):
+        return self._habitat
+
+    def setNombre(self, genero):
+        self._genero = genero
+        
+    def getNombre(self):
+        return self._genero

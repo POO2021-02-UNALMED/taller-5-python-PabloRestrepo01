@@ -1,7 +1,7 @@
 class Zona:
-    def __init__(self, nombre, zoologico):
+    def __init__(self, nombre, zoologico = None):
         self._nombre = nombre
-        self._zoologico = zoologico
+        self._zoo = zoologico
         self._animales = []
     
     def agregarAnimales(self, animal):
@@ -9,3 +9,15 @@ class Zona:
     
     def cantidadAnimales(self):
         return len(self._animales)
+    
+    def setNombre(self, nombre):
+        self._nombre = nombre
+        
+    def getNombre(self):
+        return self._nombre
+    
+    def setZoo(self, zoo):
+        self._zoo = zoo
+    
+    def getZoo(self):
+        return self._zoo

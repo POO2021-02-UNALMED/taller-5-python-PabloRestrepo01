@@ -1,10 +1,10 @@
 from zooAnimales.animal import Animal
 class Anfibio(Animal):
-    listado = []
+    _listado = []
     ranas = 0
     salamandras = 0
     
-    def __init__(self, colorPiel, venenoso, nombre, edad, habitat, genero):
+    def __init__(self, nombre, edad, habitat, genero, colorPiel, venenoso):
         self._colorPiel = colorPiel
         self._venenoso = venenoso
         Animal._totalAnimales += 1
@@ -24,7 +24,7 @@ class Anfibio(Animal):
         return 'saltar'
     
     @classmethod
-    def crearRamas(cls, nombre, edad, genero):
+    def crearRama(cls, nombre, edad, genero):
         cls.ranas += 1
         return Anfibio(nombre, edad, 'selva', genero, 'rojo', True)
         
