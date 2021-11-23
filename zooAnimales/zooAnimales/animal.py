@@ -21,14 +21,14 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
-        return 	"Mamiferos: " + Mamifero.cantidadMamiferos() +'''\n
-		Aves: ''' +Ave.cantidadAves() + '''\n
-		Reptiles: '''+Reptil.cantidadReptiles() +'''\n
-		Peces: '''+Pez.cantidadPeces() +'''\n
-		Anfibios: '''+Anfibio.cantidadAnfibios()
+        return 	"Mamiferos: " + str(Mamifero.cantidadMamiferos()) +'''\n
+		Aves: ''' +str(Ave.cantidadAves()) + '''\n
+		Reptiles: '''+str(Reptil.cantidadReptiles()) +'''\n
+		Peces: '''+str(Pez.cantidadPeces()) +'''\n
+		Anfibios: '''+str(Anfibio.cantidadAnfibios())
     
     def toString(self):   
-        retorno = 'Mi nombre es ' + self._nombre + ', tengo una edad de ' + self._edad + ', habito en ' +self._habitat + ' y mi genero es '+self._genero;
+        retorno = 'Mi nombre es ' + self._nombre + ', tengo una edad de ' + str(self._edad) + ', habito en ' +self._habitat + ' y mi genero es '+self._genero;
         
         if self._zona != None:
             retorno += ', la zona en la que me ubico es ' + self._zona +', en el ' + self._zona.getZoo()
