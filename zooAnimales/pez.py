@@ -4,9 +4,9 @@ class Pez(Animal):
     salmones = 0
     bacalaos = 0
     
-    def __init__(self, nombre, edad, habitat, genero, colorEscamas, colorAletas):
+    def __init__(self, nombre, edad, habitat, genero, colorEscamas, cantidadAletas):
         self._colorEscamas = colorEscamas
-        self._colorAletas = colorAletas
+        self._cantidadAletas = cantidadAletas
         Animal._totalAnimales += 1
         self._nombre = nombre
         self._edad = edad
@@ -39,8 +39,8 @@ class Pez(Animal):
     def getColorEscamas(self):
         return self._colorEscamas
 
-    def setColorAletas(self, colorAletas):
-        self._colorAletas = colorAletas
+    def setCantidadAletas(self, cantidadAletas):
+        self._cantidadAletas = cantidadAletas
     
     def getColorAletas(self):
-        return self._colorAletas
+        return self._cantidadAletas
