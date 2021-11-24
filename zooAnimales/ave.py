@@ -6,13 +6,13 @@ class Ave(Animal):
     
     def __init__(self, nombre, edad, habitat, genero, colorPlumas):
         self._colorPlumas = colorPlumas
-        Ave._listado.append(self)
         Animal._totalAnimales += 1
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
-        self._zona = None  
+        self._zona = None 
+        Ave._listado.append(self)
     
     @classmethod
     def cantidadAves(cls):
