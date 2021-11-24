@@ -16,7 +16,7 @@ class Ave(Animal):
     
     @classmethod
     def cantidadAves(cls):
-        len(cls._listado)
+        str(len(cls._listado))
         
     @staticmethod
     def movimiento():
